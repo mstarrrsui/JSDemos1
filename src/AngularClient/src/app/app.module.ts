@@ -37,6 +37,7 @@ import { PageLoggerComponent } from "./common/logging/pageLogger.component";
     ],
     providers: [ 
         ToastrService, 
+        PageLoggerService,
         AppConfiguration 
     ]
 })
