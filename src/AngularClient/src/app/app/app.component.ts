@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from "rxjs/Observable";
+import { Subscription } from "rxjs/Subscription";
 
 @Component({
     selector: 'app',
@@ -7,7 +8,14 @@ import { Observable } from "rxjs/Observable";
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
+  constructor() {
+  }
+
   ngOnInit() {
+    //this.logmsgs.push("hello from app...");
+    //this.loggerService.log("hello from app...");
     //var clicks = Observable.fromEvent(document, 'click');
     // Each click event is mapped to an Observable that ticks every second
     //var higherOrder = clicks.map((ev) => Observable.interval(1000));

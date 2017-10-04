@@ -14,6 +14,8 @@ import { ROUTES } from './routes'
 import { ToastrService } from './common/toastr.service';
 import { AppConfiguration } from './common/appConfiguration';
 import { RxJsDemo1Component } from './rxjs/demo1/rxjs.demo1.component';
+import { PageLoggerService } from "./common/logging/pageLogger.service";
+import { PageLoggerComponent } from "./common/logging/pageLogger.component";
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -23,7 +25,8 @@ import { RxJsDemo1Component } from './rxjs/demo1/rxjs.demo1.component';
         CounterComponent,
         RxJsDemo1Component,
         HomeComponent,
-        Error404Component
+        Error404Component,
+        PageLoggerComponent
         ],
     imports: [
         BrowserModule,
